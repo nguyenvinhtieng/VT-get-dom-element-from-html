@@ -58,7 +58,7 @@ function getDomById(ids) {
 		if (count > 1) {
 			vscode.window.showInformationMessage(`Has id ${id} appear ${count} times`);
 		}
-		result += `\nlet ${generateName(id)} = document.geElementById('.${id}')`;
+		result += `\nlet ${generateName(id)} = document.geElementById('${id}')`;
 	})
 	return result;
 }
